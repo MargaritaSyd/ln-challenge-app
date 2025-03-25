@@ -25,9 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex px-64`}
       >
-        {children}
+        <div className="w-full">
+          {children}
+        </div>
+        <div className="sidebar__aside h-screen hidden lg:inline">
+          <div className="banner h-full" />
+        </div>
       </body>
     </html>
   );
