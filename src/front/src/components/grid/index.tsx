@@ -1,7 +1,9 @@
+
 export default function Grid() {
+
   return (
     <div>
-      La Nación Challenge
+      LN Challenge Grid
     </div>
   );
 }

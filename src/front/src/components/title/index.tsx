@@ -1,21 +1,22 @@
+import { ITagsGroupedItem } from "@/bff/interfaces/apiIntefaces";
 import Tags from "../tags";
 
 interface ITitle {
   text: string;
+  tags: ITagsGroupedItem[];
 }
-const tags = ['tag1', 'tag2', 'tag3', 'tag4', 'tag5']
-export default function Title({text}:ITitle) {
+export default function Title({text, tags}:ITitle) {
   return (
     <div>
       <h1 className="title text-3xl w-max">
         {text}
       </h1>
       {
-        tags.map((tag: string) => (
+        tags.map((tag: ITagsGroupedItem) => (
         <Tags
-          key={tag}
-          titleTag={tag}
-          linkTag={tag}
+          key={tag.slug}
+          titleTag={tag.text}
+          linkTag={`/tema/${tag.slug}`}
         />
       ))
       }
