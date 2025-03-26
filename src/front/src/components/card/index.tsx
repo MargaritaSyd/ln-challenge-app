@@ -1,6 +1,6 @@
 import { parseDate, titleWithStrongWord } from "../../utils/articlesUtils";
 
-interface ICard {
+export interface ICard {
   imageSrc: string;
   title: string;
   date: string;

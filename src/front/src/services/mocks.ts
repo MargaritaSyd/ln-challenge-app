@@ -64,6 +64,12 @@ const tag12 = {
     website_url: ""
 };
   
+export const tagsMock = [
+  {...tag1, count: 6},
+  {...tag2, count: 5},
+  {...tag3, count: 4},
+  {...tag4, count: 3},
+]
 
 export const articlesMocks: IArticles[] = [
   {...basicArticle,
@@ -125,3 +131,28 @@ export const articlesMocks: IArticles[] = [
 ]
 
 export const allArticlesMocks: IArticles[] = [...articlesMocks, ...articlesMocks, ...articlesMocks]
+
+export const mockArticles: IArticles[] = [  
+    {
+      _id: '1',
+      promo_items: { basic: { url: 'https://example.com/image1.jpg' } },
+      headlines: { basic: 'Article 1' },
+      display_date: '2025-03-26',
+      subtype: '',
+      taxonomy: {
+        tags: []
+      },
+      website_url: ''
+    },  
+    {
+      _id: '2',
+      promo_items: { basic: { url: 'https://example.com/image2.jpg' } },
+      headlines: { basic: 'Article 2' },
+      display_date: '2025-03-27',
+      subtype: '',
+      taxonomy: {
+        tags: []
+      },
+      website_url: ''
+    },  
+  ];  

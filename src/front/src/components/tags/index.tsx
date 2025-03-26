@@ -7,6 +7,6 @@ interface ITags {
 
 export default function Tags({titleTag, linkTag}:ITags) {
   return (
-    <Link className='tag' href={linkTag}>{titleTag}</Link>
+    <Link data-testid="tag" className='tag' href={linkTag}>{titleTag}</Link>
   );
 }
