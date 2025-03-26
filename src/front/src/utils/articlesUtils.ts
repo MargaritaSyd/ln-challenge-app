@@ -1,8 +1,7 @@
 import { IArticles, ITags, ITagsGroupedItem } from "@/bff/interfaces/apiIntefaces";
 
 export const tagsGrouped = (data:IArticles[]) => {
-  const tagsGroup = Array.from(new Set(data.flatMap((item) => item.taxonomy.tags)));
-  console.log(data, 'data');
+  const tagsGroup = data.flatMap((item) => item.taxonomy.tags);
   return tagsGroup;
 };
 
@@ -21,7 +20,7 @@ export const countTags = (data:IArticles[]) => {
 
   const result:ITagsGroupedItem[] = [];  
   map.forEach((count, tagItem) => {  
-      const item = JSON.parse(tagItem);  
+      const item = JSON.parse(tagItem);
       item.count = count;  
       result.push(item);  
   });  
