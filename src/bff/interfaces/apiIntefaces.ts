@@ -5,7 +5,7 @@ export interface ITags {
 export interface IArticles {
   display_date: string;
   headlines: {basic: string};
-  promo_items: { basic: unknown};
+  promo_items: { basic: { url: string } };
   subtype: string;
   taxonomy: { 
     tags: ITags[]

@@ -31,3 +31,9 @@ body {
   color: #0074c4;
   margin-bottom: 10px;
 }
+.grid_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2.5em;
+  grid-row-gap: 2.5em;
+}

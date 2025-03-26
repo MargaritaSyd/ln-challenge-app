@@ -27,10 +27,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex px-64`}
       >
-        <div className="w-full">
+        <div className="w-full mr-20">
           {children}
         </div>
-        <div className="sidebar__aside h-screen hidden lg:inline">
+        <div className="sidebar__aside hidden lg:inline">
           <div className="banner h-full" />
         </div>
       </body>

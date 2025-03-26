@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 interface ICard {
   imageSrc: string;
@@ -9,9 +9,8 @@ interface ICard {
 export default function Card({imageSrc, title, date}:ICard) {
   return (
     <div>
-      <Image  
-        src={imageSrc} alt="2"
-        width={100} height={100}
+      <img  
+        src={imageSrc} alt={title}
       />
       <h2>{title}</h2>
       <h4>{date}</h4>

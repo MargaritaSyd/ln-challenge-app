@@ -6,14 +6,16 @@ import { countTags } from "@/front/src/utils/articlesUtils";
 export default async function Home() {
 
   const data = await loadArticles();
-  console.log(countTags(data), 'datata');
+
   return (
     <>
       <Title
         text="Acumulado Grilla"
         tags={countTags(data)}
       />
-      <Grid />
+      <Grid
+        articles={data}
+      />
     </>
   );
 }

@@ -68,48 +68,56 @@ const tag12 = {
 export const articlesMocks: IArticles[] = [
   {...basicArticle,
     subtype: "7",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag1, tag2, tag5, tag7, tag10]
     },
   },
   {...basicArticle,
     subtype: "7",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag3, tag4, tag5, tag6, tag7]
     },
   },
   {...basicArticle,
     subtype: "8",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag8, tag3, tag10, tag11, tag12]
     },
   },
   {...basicArticle,
     subtype: "8",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: []
     },
   },
   {...basicArticle,
     subtype: "7",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag1, tag6, tag8, tag10, tag12]
     },
   },
   {...basicArticle,
     subtype: "7",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag1, tag6, tag8, tag10, tag12]
     },
   },
   {...basicArticle,
     subtype: "7",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag1, tag6, tag8, tag10, tag12]
     },
   },
   {...basicArticle,
     subtype: "7",
+    promo_items: { basic: { url: "" } },
     taxonomy: {
       tags: [tag1, tag3, tag8, tag10, tag12]
     },
