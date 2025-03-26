@@ -1,5 +1,5 @@
 import { ITagsGroupedItem } from "@/bff/interfaces/apiIntefaces";
-import Tags from "../tags";
+import GroupTags from "../groupTags";
 
 interface ITitle {
   text: string;
@@ -11,17 +11,7 @@ export default function Title({text, tags}:ITitle) {
       <h1 className="title text-3xl w-max">
         {text}
       </h1>
-      <div className="mb-5">
-      {
-        tags.map((tag: ITagsGroupedItem) => (
-        <Tags
-          key={tag.slug}
-          titleTag={tag.text}
-          linkTag={`/tema/${tag.slug}`}
-        />
-      ))
-      }
-      </div>
+      <GroupTags tags={tags} />
     </div>
   );
 }
