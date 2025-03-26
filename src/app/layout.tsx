@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ContextProvider from "@/front/src/context/context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +28,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex lg:mx-20`}
       >
-        <div className="w-full lg:mr-20">
-          {children}
-        </div>
-        <div className="sidebar__aside hidden lg:inline">
-          <div className="banner h-full" />
-        </div>
+        <ContextProvider>
+          <div className="w-full lg:mr-20">
+            {children}
+          </div>
+          <div className="sidebar__aside hidden lg:inline">
+            <div className="banner h-full" />
+          </div>
+        </ContextProvider>
       </body>
     </html>
   );

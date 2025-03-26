@@ -1,15 +1,15 @@
 import { IArticles } from "@/bff/interfaces/apiIntefaces";
 import Card from "../card";
+import { useContext } from "react";
+import { Context } from "../../context/context";
 
-interface IGrid {
-  articles: IArticles[]
-}
-export default function Grid({articles}:IGrid) {
+export default function Grid() {
+  const articles =useContext(Context);
 
   return (
     <div className="grid_section">
       {
-        articles.map((articleItem: IArticles) => {
+        (articles as IArticles[]).map((articleItem: IArticles) => {
           const {promo_items, headlines, display_date} =  articleItem
           return (
           <Card
