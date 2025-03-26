@@ -10,6 +10,8 @@ body {
   font-family: Arial, "sans-serif";
   padding-top: 100px;
   padding-bottom: 50px;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
 }
 .sidebar__aside {
   flex-basis: 18.75em;
