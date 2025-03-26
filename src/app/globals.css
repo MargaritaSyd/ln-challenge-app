@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@media only screen and (min-width: 48em) {
+  .grid_section {
+    grid-template-columns: 1fr 1fr
+  }
+}
+@media only screen and (min-width: 80em) {
+  .grid_section {
+    grid-template-columns: 1fr 1fr 1fr
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,6 +23,7 @@ body {
   padding-bottom: 50px;
   padding-right: 2.5em;
   padding-left: 2.5em;
+
 }
 .sidebar__aside {
   flex-basis: 18.75em;
@@ -33,9 +45,17 @@ body {
   color: #0074c4;
   margin-bottom: 10px;
 }
+
 .grid_section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2.5em;
   grid-row-gap: 2.5em;
 }
+.card_title {
+  margin-top: 0.375em;
+}
+.card_date{
+    font: 400 0.875rem "Arial", "sans-serif";
+    color: #5a5a5a;
+    margin-top: 0.375em;
+  }

@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex mx-28`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex lg:mx-20`}
       >
-        <div className="w-full mr-20">
+        <div className="w-full lg:mr-20">
           {children}
         </div>
         <div className="sidebar__aside hidden lg:inline">
