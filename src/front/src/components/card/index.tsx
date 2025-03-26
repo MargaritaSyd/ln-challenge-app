@@ -10,10 +10,10 @@ export default function Card({imageSrc, title, date}:ICard) {
 const {strongWord, joinTitle} = titleWithStrongWord(title);
   return (
     <div>
-      <div className="h-50 overflow-hidden">
+      <div className="md:h-60 overflow-hidden content-center">
         <img  
           src={imageSrc} alt={title}
-          className="w-full"
+          className="w-full card_image"
         />
       </div>
       <h2 className="card_title"><b>{strongWord}</b>{` ${joinTitle}`}</h2>
